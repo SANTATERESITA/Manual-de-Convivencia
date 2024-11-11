@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de Convivencia Escolar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Paleta de colores */
         :root {
@@ -27,27 +27,31 @@
 
         h1, h2, h3 {
             color: var(--primary-color);
-            font-family: 'Playfair Display', serif;
+            font-family: 'Merriweather', serif;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 40px;
+            font-weight: bold;
             margin: 30px 20px;
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 28px;
+            font-weight: 700;
             margin: 20px 20px;
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 24px;
             margin: 15px 20px;
+            font-weight: 500;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 18px;
             margin: 10px 20px;
+            max-width: 800px;
         }
 
         /* Barra de navegación */
@@ -78,7 +82,7 @@
             color: var(--secondary-color);
             padding: 15px 20px;
             display: block;
-            font-size: 1rem;
+            font-size: 16px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
@@ -105,18 +109,18 @@
 
         nav ul li ul li a {
             padding: 10px 20px;
-            font-size: 0.9rem;
+            font-size: 14px;
         }
 
         /* Migas de pan */
         .breadcrumbs {
             padding: 15px 20px;
             background-color: var(--secondary-color);
-            font-size: 0.9rem;
+            font-size: 14px;
             display: flex;
             gap: 5px;
             color: var(--primary-color);
-            margin-top: 60px; /* Para evitar superposición con la barra */
+            margin-top: 60px;
         }
 
         .breadcrumbs a {
@@ -134,12 +138,32 @@
 
         /* Contenido principal */
         main {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
             background-color: var(--secondary-color);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+        }
+
+        /* Botones */
+        .btn {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
         }
 
         /* Responsividad */
@@ -153,21 +177,28 @@
                 display: block;
                 padding-left: 20px;
             }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li>
-               <a href="#introduccion"><span>🏠</span> Presentación</a>
-                <ul>
-                    
-                    <li><a href="#pei">contenido del Manual de Convivencia Escolar</a></li>
-                    <li><a href="#comité">Comité de Convivencia Escolar</a></li>
-                  </ul>
-             </li>
-             <li>
                 <a href="#manual"><span>📖</span> Manual de Convivencia</a>
                 <ul>
                     <li><a href="#manual">Introducción</a></li>
